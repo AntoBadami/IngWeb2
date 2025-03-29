@@ -1,0 +1,27 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+.logo{
+    width: 75%;
+    height: auto;
+}
+.logo img{
+    width: 100%;
+}
+.vector{
+    width: 100%;
+    height: auto;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.vector img{
+    width: 100%
+}
