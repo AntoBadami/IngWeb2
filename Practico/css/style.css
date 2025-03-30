@@ -14,6 +14,7 @@
     --font-color-inputs:#535353;
     --midnight-purple : #1C1939CC;
     --white:#FFFFFF;
+    --white-blue: #5252FF;
 }
 .container {
     z-index: 0;
@@ -51,12 +52,19 @@
     background-color: var(--heavy-blue);
 }
 
-.icon {
-    background-repeat: no-repeat;
-    background-position:1.94vw center;
-    background-size: 6.66 vw 6.66vh;
-    padding-left: 13.81%;
-    padding-top: 10%;
+.backbutton {
+    margin-left: 3.6vw;
+    background: none;
     border: none;
-    background-color: white;
+    background-image: url(../img/Arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 6.66vw;
+    height: 3vh;
+    cursor: pointer;
+}
+
+.textwhite {
+    color: var(--white);
 }
