@@ -9,6 +9,7 @@
 }
 .rect-dinero
 {
+    display: flex;
     margin-top: 36px;
     width: 360px;
     height: 110px;
@@ -19,9 +20,14 @@
     align-items: flex-start;
     border: none;
     background-color: var(--white-blue);
+    background-image: url(../img/Ellipse\ 1.svg), url(../img/Ellipse\ 2.svg);
+    background-repeat: no-repeat;
+
 }
 .div_options
 {
+    display: flex;
+    flex-direction: column;
     margin-top: 17px;
     width: 360px;
     height: 178px;
@@ -29,7 +35,10 @@
     background: #1F1F1F;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
 }
-.individual-option {
+.individual-option 
+{
+    display: flex;
+    flex-direction: column;
     width: 359.4px;
     height: 63px;
     background-color: var(--white);
@@ -37,10 +46,22 @@
     justify-content: space-between;
     display: flex;
 }
-.option1{
+.option1
+{
     margin-top: 34px;
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+    padding-right: 19px;
+    border: none;
 }
-.option2 {
+.option2 
+{
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+    padding-right: 19px;
+    border: none;
     border-radius: 0vw 0vw 3vw 3vw;
 }
 .loginbutton{
@@ -79,16 +100,40 @@
     margin-top: 17px;
     margin-right: 200px;
     font-size: 12px;
-    font-family: Lato, sans-serif;
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 .span3 {
     margin: 17px;
+    margin-bottom: 30px;
     font-size: 25px;
-    font-family: Lato, sans-serif;
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+.span4 
+{
+    margin: 20px;
+    color: #4D4D4D;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.radio
+{
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    border: 2px solid gray;
+}
+
+
+.loginbutton {
+    margin-top: auto;
+    margin-bottom: 40px;
 }
