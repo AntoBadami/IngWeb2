@@ -22,6 +22,7 @@
     background-color: var(--white-blue);
     background-image: url(../img/Ellipse\ 1.svg), url(../img/Ellipse\ 2.svg);
     background-repeat: no-repeat;
+    background-size: 138px 110px, 155px 110px;
 
 }
 .div_options
