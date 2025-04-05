@@ -48,6 +48,17 @@
 
     cursor: pointer;
 }
+.buttong:hover 
+{
+    background-color: #4527a0; /* Azul más claro */
+    box-shadow: 0 0 0.5em rgba(49, 27, 146, 0.4); /* Sombra suave */
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+.buttong:active 
+{
+    background-color: #311b92cc;
+    transform: scale(0.98);
+}
 .buttonblue
 {
     color: var(--white);
@@ -65,6 +76,13 @@
     width: 6.66vw;
     height: 3vh;
     cursor: pointer;
+}
+
+.backbutton:hover 
+{
+    opacity: 0.7;
+    transform: scale(1.05);
+    transition: opacity 0.3s, transform 0.3s;
 }
 
 .textwhite {

@@ -6,17 +6,69 @@
         <title>Login - Wibond</title>
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/log.css">
+        <style>
+            body {
+              opacity: 0;
+              transition: opacity 1s;
+            }
+        </style>
+        <script>
+            window.onload = () => {
+              document.body.style.opacity = '1';
+            };
+        </script>
     </head>
     <body>
         <div class="container">
             <img src="../img/Logo.png" alt="Logo de inicio" id="logo">
             <form id="loginform">
-                <input type="text" placeholder="Usuario" class="inputg inputblue logininput loginicon logininput_user">
-                <input type="text" placeholder="Contraseña" class="inputg inputwhite logininput loginicon logininput_pass">
+                <input id="email" type="text" placeholder="Usuario" class="inputg inputblue logininput loginicon logininput_user">
+                <input id="password" type="password" placeholder="Contraseña" class="inputg inputwhite logininput loginicon logininput_pass" minlength="8" required>
                 <a href="" id="logintext_fp" class="logintext">Olvidaste tu contraseña?</a>
-                <input type="submit" value="Iniciar Sesion" class="buttong buttonblue loginbutton">
+                <input id="submitBtn" type="submit" value="Iniciar Sesion" class="buttong buttonblue loginbutton" disabled>
                 <p id="logintext_reg" class="longintext">No tenés una cuenta? - <a href="" id="logintext_reg_link" class="logintext">Registrate</a></p>
             </form>
         </div>
+        <script>
+            const form = document.getElementById("loginform");
+            const emailInput = document.getElementById("email");
+            const passwordInput = document.getElementById("password");
+            const submitBtn = document.getElementById("submitBtn");
+
+            function checkInputs() {
+                const email = emailInput.value;
+                const password = passwordInput.value;
+
+                if (email !== "" && password !== "") {
+                submitBtn.disabled = false;
+                } else {
+                submitBtn.disabled = true;
+                }
+            }
+
+            //se verifica los campos
+            emailInput.addEventListener("input", checkInputs);
+            passwordInput.addEventListener("input", checkInputs);
+
+            form.addEventListener("submit", function(e) {
+                e.preventDefault();
+                const email = emailInput.value;
+                const password = passwordInput.value;
+                
+                // Verifica si el email contiene "@" y "."
+                if (!email.includes("@") || !email.includes(".")) {
+                    alert("El usuario debe ser un correo electrónico válido.");
+                    return;
+                }
+                // Verifica si la contraseña tiene al menos 8 caracteres
+                if (password.length < 8) {
+                    alert("La contraseña debe tener al menos 8 caracteres.");
+                    return;
+                }
+                //redirigue a seleccionar tipo de transferencia
+                window.location.href = "../html/transferencia.html";
+            });
+        </script>
+          
     </body>
 </html>
