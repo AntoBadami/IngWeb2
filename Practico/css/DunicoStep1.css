@@ -22,7 +22,65 @@
 }
 .steps
 {
-    width: 360px;
+    width: 210px;
     height: 30px;
     margin-top: 27px;
+    display: flex;
+    align-items: center;
+}
+.linea
+{
+    width: 70px;
+    height: 2px;
+    background-color: #D7D8DA;
+}
+.backblue
+{
+    background-color: #507CDD;
+    border: #507CDD;
+}
+.backgray 
+{
+    background-color: #D7D8DA;
+    border: #D7D8DA;
+}
+.span5 {
+    margin-left: 7px;
+    margin-top: 39px;
+    margin-right: 140px;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #4D4D4D;
+}
+
+.inputg {
+    width: 350px;
+    height: 180px;
+    margin-top: 15px;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.66em;
+    letter-spacing: 0;
+    color: var(--font-color-inputs);
+    border-radius: 3vw;
+    border: none;
+    outline: none;
+}
+.inputblue {
+    background-color: var(--ligth-blue);
+}
+.logininput {
+    height: 6.25vh;
+}
+.loginicon {
+    background-repeat: no-repeat;
+    background-position:1.94vw center;
+    background-size: 6.66 vw 6.66vh;
+    padding-left: 13.81%;
+}
+.logininput_user {
+    background-image: url(../img/User.svg);
 }
