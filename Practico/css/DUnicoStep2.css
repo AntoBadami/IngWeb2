@@ -34,6 +34,7 @@
     height: 2px;
     background-color: #D7D8DA;
 }
+
 .span5 {
     margin-left: 7px;
     margin-top: 39px;
@@ -73,12 +74,4 @@
 }
 .logininput_user {
     background-image: url(../img/User.svg);
-}
-.individual-option.selected .radio::before {
-    content: '';
-    width: 12px;
-    height: 12px;
-    background-color: gray;
-    border-radius: 50%;
-    display: block;
 }

@@ -6,6 +6,13 @@
         <title>Transferencia - Wibond</title>
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/transferencia.css">
+        <style>
+            body {
+              opacity: 0;
+              transition: opacity 1s;
+            }
+        </style>
+        <script src="../js/transferencia.js"></script>
     </head>
     <body>
         <div class ="container">
@@ -23,16 +30,16 @@
             </div>
             <div class="div_options">
                 <span class="textwhite span2">Tipo de destino</span>
-                <div class="individual-option option1">
+                <div id ="option1" class="individual-option option1">
                     <label>Destinatario único</label>
                     <div class="radio"></div>
                 </div>
-                <div class="individual-option option2">
+                <div id="option2" class="individual-option option2">
                     <label>Múltiples destinatarios</label>
                     <div class="radio"></div>
                 </div>
             </div>
-            <button class="buttong buttonblue loginbutton" >Siguiente</button>
+            <button id="siguiente" class="buttong buttonblue loginbutton" disabled>Siguiente</button>
         </div>
     </body>
 </html>

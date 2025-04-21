@@ -20,3 +20,11 @@
     margin-top: auto;
     margin-bottom: 40px;
 }
+.individual-option.selected .radio::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: gray;
+    border-radius: 50%;
+    display: block;
+}
